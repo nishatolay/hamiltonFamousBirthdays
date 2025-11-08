@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Person Name • Hamilton Famous Birthdays</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+  
+  <style>
+    .detail { max-width: 900px; margin: 0 auto; padding: var(--space); }
+    .back { display: inline-block; margin-bottom: var(--space); text-decoration: none; color: var(--accent); font-weight: 600; }
+    .profile {
+      display: grid; gap: var(--space);
+      grid-template-columns: 1fr;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid var(--border); border-radius: var(--radius); padding: var(--space);
+    }
+    @media (min-width: 800px) { .profile { grid-template-columns: 320px 1fr; } }
+    .profile .portrait { border-radius: calc(var(--radius) - 6px); overflow: hidden; aspect-ratio: 4/5; }
+    .title { margin: 0 0 6px 0; font-size: clamp(22px, 3.6vw, 34px); }
+    .sub { margin: 0 0 var(--space) 0; color: var(--muted); }
+    .bio { margin: 0; font-size: 16px; }
+  </style>
+
+  
+</head>
+<body>
+  <header class="site-header">
+    <h1>Hamilton Famous Birthdays</h1>
+  </header>
+
+  <main class="detail">
+    <a class="back" href="index.html">← Back to all</a>
+
+    <section class="profile">
+      <figure class="portrait">
+        <img src="images/sample-1.jpg" alt="Person Name" style="width:100%;height:100%;object-fit:cover">
+      </figure>
+      <div>
+        <h2 class="title">Person Name</h2>
+        <p class="sub">January 11 • Hamilton, Ontario</p>
+        <p class="bio">
+          Short bio goes here. Add key achievements, why they are notable, and a fun fact students will remember.
+          Keep it to one or two short paragraphs for readability.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
