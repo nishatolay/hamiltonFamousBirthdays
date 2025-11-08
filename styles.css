@@ -124,3 +124,23 @@ h1 {
   color: var(--muted);
   font-size: 14px;
 }
+
+#search {
+  display: block;
+  width: min(90%, 420px);
+  margin: 10px auto 20px;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--fg);
+  outline: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+#search:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 45%, transparent);
+}
+
